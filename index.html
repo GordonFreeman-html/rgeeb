@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width" />
     <title>RGB Colours</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="style.css" /> 
+  <script src="script.js" defer> </script>
+</head>
   <body>
     <h1>RGB Colours</h1>
-    <p class="p">An RGB Clolour is specified bu: <span c>rgb(red, green, blue)</span></p>
+    <p class="p">An RGB Clolour is specified bu: <span>rgb(red, green, blue)</span></p>
     <p class="p">
       The parameters red, green and blue specify the intensity of the colour:<br />
       0 <em>(lowest)</em> to 255 <em>(highest)</em>
@@ -18,13 +19,17 @@
 
     <h3>Try it yourself!</h3>
     <p>
-      red: <input id="redin" type=number" value="255" /> green:<input
-      id="greenin"type=number" value="255" /> blue:
-      <input id="bluein" type="number" value="0" />
+      Width: <input id="wIn" type="number" value="400" min="50" max="400" step="10" />
+      Height: <input id="hIn" type="number" value="200" min="50" max="200" step="10" />
+      <br>
+      red: <input id="redIn" type="number" value="255" min="0" max="255" step="5" /> green:<input
+      id="greenIn" type="number" value="255" min="0" max="255" step="5"/> blue:
+      <input id="blueIn" type="number" value="0" min="0" max="255" step="5"/>
+      <br>
     </p>
     <p id="display""></p>
-    <p><button>Preview</button></p>
-    <p class="rgb-code">rgb(255, 255, 0)</p>
+
+    <p class="rgb-code" id="rgbStrOut">rgb(255, 255, 0)</p>
     <hr />
     <p class="p" id="poop">
       <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank"
